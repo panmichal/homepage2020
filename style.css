@@ -108,6 +108,8 @@
 
 .box-left {
     align-self: flex-start;
+    display: flex;
+    justify-content: space-between;
 }
 .box-right {
     align-self: center;
@@ -124,24 +126,11 @@
     display: block;
 }
 
-.box-link-music .after {
-    display: none;
-    left: 0;
-    position:relative;
-    /* display: block; */
-    height: 1em;
-    width: 500px;
-    /* margin-left: -595px; */
-    border-top: 3px solid;
-    margin-top: 5px;
-}
-
 .text-container-right {
-    position: relative;
-    margin-left: -417px;
+    margin-left: -717px;
     display: flex;
-    width: 550px;
-    height: 100px;
+    width: 850px;
+    height: 80px;
     justify-content: space-between;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -149,29 +138,38 @@
 }
 
 .text-container-left {
-    position: relative;
-    margin-left: -417px;
     display: flex;
-    width: 550px;
-    height: 100px;
+    width: 850px;
+    height: 80px;
     justify-content: space-between;
     flex-direction: column;
+    margin-right: -600px;
     flex-wrap: nowrap;
-    align-items: flex-end;
 }
 
-.text-container .after {
+.text-container-right .after {
+    display: none;
+    height: 1em;
+    width: 100%;
+    border-top: 3px solid;
+    margin-top: 5px;
+    text-align: left;
+    font-size: 20px;
+    align-self: flex-start;
+}
+
+.text-container-left .after {
     display: none;
     height: 1em;
     width: auto;
     border-top: 3px solid;
     margin-top: 5px;
-    float: right;
+    font-size: 20px;
+    text-align: right;
 }
 
 .box-link {
-    width: 40%;
-    height: 60%;
+    /* width: 40%; */
 
     width: 300px;
     height: 200px;
