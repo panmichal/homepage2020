@@ -62,6 +62,24 @@
 	-o-transition: color 0.25s ease-out; 
 }
 
+.site-link {
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: Futura;
+}
+
+.site-link a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.25s ease-out; 
+	-webkit-transition: color 0.25s ease-out; 
+	-moz-transition: color 0.25s ease-out; 
+    -o-transition: color 0.25s ease-out; 
+    font-weight: 1000;
+    font-size: 45px;
+    font-style: bold;
+}
+
 .menu-item a:hover {
  color: rgb(68, 68, 68);
  text-decoration: underline;
@@ -71,23 +89,94 @@
     padding-top: 50px;
     margin: 0px auto 0px auto;
     width: 100%;
-    height: 1000px;
+    height: 800px;
     display: flex;
     flex-grow: 1;
+    justify-content: space-around;
 }
 
-.rectangle-element {
-    margin: 10% auto auto auto;
-    width: 50%;
-    height: 50%;
+.box {
+    width: 30%;
+    height: 30%;
     background-color: rgb(243, 208, 208);
     transition: background-color 0.55s ease-out; 
 	-webkit-transition: background-color 0.55s ease-out; 
 	-moz-transition: background-color 0.55s ease-out; 
-	-o-transition: background-color 0.55s ease-out; 
+    -o-transition: background-color 0.55s ease-out; 
+    box-shadow: 10px 10px;
 }
 
-.rectangle-element:hover {
+.box-left {
+    align-self: flex-start;
+}
+.box-right {
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+}
 
+.box:hover {
+    box-shadow: 15px 15px;
     background-color: rgb(248, 46, 46);
+}
+
+.box:hover .after {
+    display: block;
+}
+
+.box-link-music .after {
+    display: none;
+    left: 0;
+    position:relative;
+    /* display: block; */
+    height: 1em;
+    width: 500px;
+    /* margin-left: -595px; */
+    border-top: 3px solid;
+    margin-top: 5px;
+}
+
+.text-container-right {
+    position: relative;
+    margin-left: -417px;
+    display: flex;
+    width: 550px;
+    height: 100px;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+}
+
+.text-container-left {
+    position: relative;
+    margin-left: -417px;
+    display: flex;
+    width: 550px;
+    height: 100px;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+}
+
+.text-container .after {
+    display: none;
+    height: 1em;
+    width: auto;
+    border-top: 3px solid;
+    margin-top: 5px;
+    float: right;
+}
+
+.box-link {
+    width: 40%;
+    height: 60%;
+
+    width: 300px;
+    height: 200px;
+    /* display: inline-block; */
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 20px 20px 20px;
 }
