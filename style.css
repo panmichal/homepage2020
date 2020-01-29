@@ -2,15 +2,6 @@
     display: block;
 }
 
-
-#top-menu {
-    margin: 10px auto 0px auto;
-    display: flex;
-    max-width: 30%;
-    justify-content: space-between;
-    padding-left: 0px;
-}
-
 .site {
     color: #000;
     font-family: Futura,helvetica,arial,sans-serif;
@@ -23,21 +14,6 @@
     margin: 0 auto;
 }
 
-.menu-item {
-    display: inline-block;
-    text-transform: uppercase;
-    font-family: Futura;
-}
-
-.menu-item a {
-    text-decoration: none;
-    color: black;
-    transition: color 0.25s ease-out; 
-	-webkit-transition: color 0.25s ease-out; 
-	-moz-transition: color 0.25s ease-out; 
-	-o-transition: color 0.25s ease-out; 
-}
-
 .site-link {
     display: inline-block;
     text-transform: uppercase;
@@ -46,14 +22,13 @@
 
 .site-link a {
     text-decoration: none;
-    color: black;
+    color: rgb(47, 2, 247);
     transition: color 0.25s ease-out; 
 	-webkit-transition: color 0.25s ease-out; 
 	-moz-transition: color 0.25s ease-out; 
     -o-transition: color 0.25s ease-out; 
-    font-weight: 1000;
+    font-weight: bold;
     font-size: 45px;
-    font-style: bold;
 }
 
 .menu-item a:hover {
@@ -70,6 +45,7 @@
     flex-grow: 1;
     justify-content: space-around;
     position: relative;
+    flex-wrap: wrap;
 }
 
 .box {
